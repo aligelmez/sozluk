@@ -282,7 +282,7 @@ function showPage(id) {
 async function callAI(prompt) {
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
-    file:///C:/Users/ali-g/Downloads/sozluk_ai%20(1).html
+    headers: { "Content-Type": "application/json", "x-api-key": "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", "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
     body: JSON.stringify({
       model: "claude-sonnet-4-20250514",
       max_tokens: 1000,
